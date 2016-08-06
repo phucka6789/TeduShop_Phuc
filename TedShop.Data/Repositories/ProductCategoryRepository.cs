@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TedShop.Data.Infrastructure;
 using TeduShop.Model.Models;
 
-namespace TedShop.Data.Repositories
+namespace TedShop.Data.Repositories 
 {
     public interface IProductCategoryRepository
     {
