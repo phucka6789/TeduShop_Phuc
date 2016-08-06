@@ -53,7 +53,8 @@ namespace TeduShop.Service
         public IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow)
         {
             //TODO: Select all post by tag
-            return _postRepository.GetMultiPaging(x => x.Status, out totalRow, page, pageSize);
+            //return _postRepository.GetMultiPaging(x => x.Status, out totalRow, page, pageSize);
+            return _postRepository.GetAllByTag(tag, page, pageSize, out totalRow);
         }
 
         public IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow)
