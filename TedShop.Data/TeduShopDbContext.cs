@@ -37,9 +37,9 @@ namespace TedShop.Data
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
 
 
-        protected override void OnModelCreating(DbModelBuilder builder)
-        {
+        //protected override void OnModelCreating(DbModelBuilder builder)
+        //{
 
-        }
+        //}
     }
 }
