@@ -1,7 +1,9 @@
 ﻿/// <reference path="../plugins/angular/angular.js" />
 var myApp = angular.module('myModule', []);
 //myApp.controller("myController", myController);
-myApp.controller("schoolController", schoolController);
+myApp.controller("schoolController", schoolController); 
+myApp.directive("TeduShopDirvective", teduShopDirvective);
+
 myApp.service('Validator',Validator)
 //myApp.controller("studentController", studentController);
 //myApp.controller("teacherController", teacherController);
@@ -41,5 +43,10 @@ function Validator($window)
         else
             //$window.alert('this is odd ');
             return 'This is odd';
+    }
+}
+function teduShopDirvective() {
+    return {
+        template: "<h1> This is my first </h1>"
     }
 }
