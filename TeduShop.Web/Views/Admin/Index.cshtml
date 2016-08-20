@@ -13,13 +13,20 @@
     <script src="~/Scripts/spa/APP.js"></script>
 </head>
 <body>  
-    <div ng-controller="schoolController">
+    @*<div ng-controller="schoolController">
         <div ng-controller="studentController">
            in student: {{message}}
         </div>
         <div ng-controller="teacherController">
          in teacher :  {{message}}
         </div>
+        {{message}}
+    </div>*@ 
+    <div ng-controller="schoolController">
+       <input type="number" ng-model="num"/> 
+        <br/>
+        text box la gi:{{num}}
+        <button ng-click="checkNumber()">Check number</button>
         {{message}}
     </div> 
     
